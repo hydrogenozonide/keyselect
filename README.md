@@ -9,6 +9,18 @@ The whole idea is pretty simple - I wanted a middleground between a million keyb
 - Configuration in YAML, in theory backwards compatible with most of wlr-which-key's config.
 - Super fast!
 
+# Installation
+Just like any other program. ``git clone`` the whole repo and build it with go. If you really need them, the commands are below.
+```bash
+git clone github.com/hydrogenozonide/keyselect
+cd keyselect
+go build keyselect.go
+```
+You can then take the resulting binary and stick it in your $PATH, your /usr/bin, wherever really. Then just call it as you would any other binary.
+
+# Usage
+Not really much of note. Just run the binary, and press a letter key to go to its corresponding submenu or call the corresponding command. By default, q quits out and h goes back one layer of submenus or quits at the highest level.
+
 # Configuration
 A demo config is probably the easiest way I could explain this, so I'll give one below with all the options set. It should all be self-explanatory, feel free to open an issue if anything's unclear.
 
