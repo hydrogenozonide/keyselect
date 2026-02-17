@@ -106,7 +106,7 @@ func runMenu(menu []Entry, path string) bool {
 			if e.Cmd != "" {
 				clear()
 				runCmd(e.Cmd)
-				return false
+				return true
 			}
 		}
 	}
