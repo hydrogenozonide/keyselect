@@ -16,13 +16,13 @@ git clone github.com/hydrogenozonide/keyselect
 cd keyselect
 go build keyselect.go
 ```
-You can then take the resulting binary and stick it in your $PATH, your /usr/bin, wherever really. Then just call it as you would any other binary.
+You can then take the resulting binary and stick it in your $PATH or just anywhere you want to run it from.
 
 # Usage
-Not really much of note. Just run the binary, and press a letter key to go to its corresponding submenu or call the corresponding command. By default, q quits out and h goes back one layer of submenus or quits at the highest level.
+``` keyselect ``` opens the menu. As of right now, no arguments are supported, it just serves whatever's in your config. You can then navigate the menu via pressing the corresponding letter key for the submenu you'd like to expand or command you'd like to run. Submenus are indicated by the submenu indicator symbol set in your config file, defaulting to +. You also have keys for exiting the menu and going back one layer of submenu, defaulting to Q and H respectively. These binds **very much can** interfere with your actual menu option binds, so be careful as that can lead to unexpected behaviour. Just set your binds correctly, please. 
 
 # Configuration
-A demo config is probably the easiest way I could explain this, so I'll give one below with all the options set. It should all be self-explanatory, feel free to open an issue if anything's unclear.
+The config is located in ```$XDG_CONFIG_HOME/keyselect/config.yaml```. You will have to create one as it's not auto-generated. A demo config is probably the easiest way I could explain this, so I'll give one below with all the options set. It should all be self-explanatory, feel free to open an issue if anything's unclear. If you want a slightly more fleshed out example, you can take a look in my personal dotfiles.
 
 ```yaml
 ui:
